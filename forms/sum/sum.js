@@ -12,10 +12,14 @@ The sum of X and Y is Z.
 (where X  and Y come from the user, 
 and Z is the sum  from the function). 
 */
-var X = Number(prompt("enter a number to represent X"))
-var Y  = Number(prompt("enter a number to represent Y"))
-function Calculate(X, Y) {
-  return X + Y;
+
+function calculate(num1, num2) {
+  let summedNumbers = num1 + num2
+  return summedNumbers; 
 }
+// main program
+let num1 = Number(prompt("enter a number to represent X"))
+let num2  = Number(prompt("enter a number to represent Y"))
+alert(`The sum of X and Y is ${calculate(num1, num2)}`);
 
 
